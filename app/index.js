@@ -4,5 +4,6 @@ const calc = new Calculator({
     selector: '#calculator',
     size: '80vmin',
     cssClass: 'mycalc',
-    heading : 'Calculator Widget'
+    heading : 'Calculator Widget',
+    border : '1rem solid green'
 });

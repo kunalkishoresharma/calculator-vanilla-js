@@ -31,14 +31,14 @@ export default class Calculator{
 
         if(this.size){
             this.element.style.minWidth = this.size;
-            this.element.style.minWidth = this.size;
+            this.element.style.minHeight = this.size;
         }else{
             this.element.style.minWidth = '90vmin';
             this.element.style.minHeight = '90vmin'; 
         }
         
         while(num >= 0){
-            var div = document.createElement('div');
+            var div = document.createElement('button');
             div.classList.add('btn--digit');
             div.innerText = num;
             this.elements.appendChild(div);
@@ -46,7 +46,7 @@ export default class Calculator{
         }
 
         operator.forEach((_,i)=>{
-            var div = document.createElement('div');
+            var div = document.createElement('button');
             div.classList.add('btn--digit');
             div.innerText = _;
             this.elements.appendChild(div)
